@@ -1,0 +1,54 @@
+(1)
+for i in range(50,26,-1):
+    if i>20:
+        print("grater than 20")
+    elif i>10:
+        print("gtater than 10")
+    else:
+        ("other")
+
+
+(2)
+total=0
+for i in range(1,51):
+    total+=i
+print(total)    
+
+
+(3)
+p=2
+isprime=0
+for i in range(2,p):
+    if p%i==0:
+        isprime=1
+        break
+if isprime==0:
+    print("prime number")
+else:
+    print("not a prime number")
+
+(4)
+a=134
+b=a
+remender=0
+while b>0:
+    remender+=b%10
+    b=b//10
+    
+print("total:",remender)  
+
+(5)
+a=153
+b=a
+total=0
+while a>0:
+    r=a%10
+    total+=r**3
+    a=a//10
+    
+if b==total:
+    print("aramstrong")
+else:
+    print("not")
+    
+    
