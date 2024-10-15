@@ -8,3 +8,203 @@ for i in range(1,8):
         else:
             print(" ",end=" ")
     print() 
+
+for i in range(1,8):
+    for j in range(1,8):
+        if j<=i and j<=8-i:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()  
+
+a=2
+for i in range(1,4):
+    for j in range(1,5):
+        if j<=5-i:
+            print(a,end=" ")
+            a*=2
+        
+        else:
+            print(" ",end=" ")
+    print()
+
+
+a=4
+for i in range(1,4):
+    for j in range(1,4):
+        if j<=i:
+            print(a,end=" ")
+            a+=2
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
+a=0
+for i in range(1,5):
+    for j in range(1,5):
+        if j<=i:
+            print(chr(100+a),end=" ")
+            a+=1
+        
+        else:
+            print(" ",end=" ")
+    print() 
+
+
+
+a=0
+for i in range(1,4):
+    for j in range(1,4):
+        if j<=4-i:
+            print(chr(122-a),end=" ")
+        
+        else:
+            print(" ",end=" ")
+    print()
+    a+=1
+
+
+
+a=20
+for i in range(1,4):
+    for j in range(1,5):
+        if j<=5-i:
+            print(a,end=" ")
+            a+=1
+        
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
+a=7
+for i in range(1,5):
+    a=7
+    for j in range(1,5):
+        if j<=5-i:
+            print(a,end=" ")
+            a+=1
+        
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
+a=0
+for i in range(1,5):
+     for j in range(1,5):
+        if j<=5-i:
+            print(chr(65+a),end=" ")
+            a+=1
+        else:
+            print(" ",end=" ")
+     print()
+
+
+
+a=1
+for i in range(1,5):
+    for j in range(1,5):
+        if j<=5-i:
+            print(a,end=" ")
+            a+=1
+        
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
+for i in range(1,5):
+    a=1
+    for j in range(1,5):
+        if j<=5-i:
+            print(a,end=" ")
+            a+=1
+        
+        else:
+            print(" ",end=" ")
+    print() 
+
+
+
+a=4
+for i in range(1,5):
+    for j in range(1,5):
+        if j<=5-i:
+            print(a,end=" ")
+        
+        else:
+            print(" ",end=" ")
+    print()  
+    a-=1
+
+
+
+for i in range(1,5):
+    for j in range(1,5):
+        if j<=5-i:
+            print("*",end=" ")
+        
+        else:
+            print(" ",end=" ")
+    print()
+
+
+
+
+a=10
+for i in range(1,3):
+    a=10
+    for j in range(1,5):
+        print(a,end=" ")
+        a+=1
+        
+    print()
+
+
+
+a=4
+for i in range(1,4):
+    for j in range(1,5):
+
+            print(a,end=" ")
+    print()       
+    a-=1 
+
+
+
+a=1
+for i in range(1,5):
+    for j in range(1,5):
+        if j<=i:
+            print(a,end=" ")
+            a+=1
+        else:
+            print(" ",end=" ")
+    print() 
+
+
+
+for i in range(1,5):
+    for j in range(1,5):
+        if j==1 or i==4 or i==j:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print()        
+
+
+
+
+for i in range(1,5):
+    for j in range(1,5):
+        if i==1 or i==4 or j==1 or j==4:
+                print("*",end=" ")
+        else:
+                print(" ",end=" ")
+    print() 
