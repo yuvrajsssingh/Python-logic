@@ -93,7 +93,53 @@ if year%4==0 and year%100!=0 or year%400==0:
     print("leap year")
 else:
     print("not")
-    
+
+
+
+
+# 8. Write a program to enter basic salary and calculate gross salary of an employee
+basic_salary = int(input("Enter the basic salary: "))
+
+if basic_salary <= 10000:
+    hra = 0.20 * basic_salary
+    da = 0.80 * basic_salary
+elif 10001 <= basic_salary <= 20000:
+    hra = 0.25 * basic_salary
+    da = 0.90 * basic_salary
+else:
+    hra = 0.30 * basic_salary
+    da = 0.95 * basic_salary
+
+gross_salary = basic_salary + hra + da
+print("Gross Salary:", gross_salary)
+
+
+
+
+# 9.Write a program to calculate the total electricity bill based on the following conditions:
+# a. The first 50 unit will be calculated with 2 rs/unit
+# b. The next 100 unit will be calculated with 5 rs/unit
+# c. The next 150 unit will be calculated with 10 rs/unit
+# d. All the other units will be calculated with 15 rs/unit
+
+units_consumed = int(input("Enter the number of units consumed: "))
+
+bill = 0
+
+if units_consumed <= 50:
+    bill = units_consumed * 2
+elif units_consumed <= 150:
+    bill = (50 * 2) + ((units_consumed - 50) * 5)
+elif units_consumed <= 300:
+    bill = (50 * 2) + (100 * 5) + ((units_consumed - 150) * 10)
+else:
+    bill = (50 * 2) + (100 * 5) + (150 * 10) + ((units_consumed - 300) * 15)
+
+print("Total electricity bill:", bill, "rs")
+
+
+
+
 
 
 
