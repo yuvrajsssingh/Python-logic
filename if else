@@ -1,119 +1,100 @@
 *conditioner statment(if-else)
-
-(1).
-num=22
-if num>20:
-    print("grater than 20")
-elif num>10:
-    ("grater than 10")
+# 1. Write a program that takes a user input of three angles and will find out whether it can form a triangle or not.
+a=int(input("enter the angle 1:"));
+b=int(input("enter the angle 2:"));
+c=int(input("enter the angle 3:"));
+if a+b+c==180 and a>0 and b>0 and c>0:
+    print("triangle")
 else:
-    print("error")
+    print("not a triangle")
 
 
-(2).
-age=11
-if 10<=age<=18:
-    print("child")
-elif 18<=age<=25:
-    print("adult")
-elif 50<=age<=60:
-    print("senior")
+
+# 2. Write a program that will determine weather when the value of temperature and humidity is provided by the user.
+a=int(input("enter the value of temprature:"))
+b=int(input("enter the value of humidity:"))
+if a>=30 and b>=90:
+    print("hot and humid")
+elif a>=30 and b<90:
+    print("hot")
+elif a<30 and b>=90:
+    print("cool and humid")
+elif a<30 and b<90:
+    print("cool")
 else:
-    pass
+    print("enter the right temprature")
 
 
-(3).
-age1=18
-age2=43
-age3=23
-old=0
-if age1<age2 and age1<age3:
-    old=age1
-elif age2<age3:
-    old=age2
+
+# Write a program that will take user input of cost price and selling price and determines whether its a loss or a profit.
+cost=int(input("enter the cost price:"))
+selling=int(input("enter the sell price:"))
+if selling>=cost:
+    profit=selling-cost
+    print(f"profit:{profit}")
 else:
-    old=age3
-print(old)    
+    loss=cost-selling
+    print(f"loss:{loss}")
 
 
-(4).
-a=50
-b=50
-c=80
-if a+b+c==180 and a>0 and b>0 and b>0:
-    print("tringle")
+
+# 4. Write a program that will tell the number of dogs and chicken are there when the user
+# will provide the value of total heads and legs.
+# a. Input are
+# b. head=1 , legs=4
+head=int(input("enter the value of total head:"))
+legs=int(input("enter the value of total legs:"))
+if head==1 and legs==4:
+    dog=1
+    print(f"number of dog:{dog}")
+elif head==1 and legs==2:
+    chiken=1
+    print(f"number of chiken:{chiken}")
+else:
+    ("entr the correct value")
 
 
-(5).
-year="2000"
-a=int(year)
-if (a%4==0 and a%100!=0) or a%400==0:
+
+# 5.Program to check whether a number is divisible by 5 and 11 or not
+num=int(input("enter the number:"))
+if num%5==0 and num%11==0:
+    print(f"{num} is divisible")
+else:
+    print("not divisible")
+
+
+
+
+# 6.Write a program to check whether triangle is equilateral, scalene or isosceles
+# a. A triangle is said Equilateral Triangle, if all its sides are equal. If a, b, c are
+# three sides of triangle. Then, the triangle is equilateral only if a == b == c
+# b. A triangle is said Isosceles Triangle, if its two sides are equal. If a, b, c are
+# three sides of triangle. Then, the triangle is isosceles if either a == b or a == c
+# or b == c.
+c. A triangle is said Scalene Triangle, if none of its sides are equal.
+a = float(input("Enter the first angle: "))
+b = float(input("Enter the second angle: "))
+c = float(input("Enter the third angle: "))
+if a==b==c:
+    print("equilateral")
+elif a!=b and a!=c and c!=b:
+    print("Scalene")
+else:
+    print("Isosceles")
+
+
+
+
+# 7.Write a program to check whether any year is a leap year or not
+# a. A leap year is exactly divisible by 4 except for century years (years ending
+# with 00). The century year is a leap year only if it is perfectly divisible by 400.
+year=int(input("enter the year"))
+if year%4==0 and year%100!=0 or year%400==0:
     print("leap year")
 else:
     print("not")
-
-(6).
-unit = 210
-
-if unit <= 50:
-    amount = unit * 1
-elif unit <= 100:
-    amount = 50 + (unit - 50) * 2
-elif unit <= 200:
-    amount = 150 + (unit - 100) * 10
-else:
-    amount = 1050 + (unit - 200) * 15
-
-print(amount)
-
-
-(7).
-a=1
-b=14
-c=2
-if a==b==c:
-    print("equalateral")
-elif a==b or a==c or b==c:
-    print("isolecec")
-else:
-    print("scalen")
+    
 
 
 
-(8).
-for i in range(1,6):
-    for j in range(1,6):
-        if j<=i:
-            print(j,end=" ")
-            
-        else:
-            print(" ",end=" ")
-            
-    print()            
-
-
-
-(9).
-num= [12, 75, 150, 180, 145, 525, 50]
-b=0
-for i in num:
-    if i>150:
-        continue
-    elif i>500:
-        break
-    elif i%5==0:
-        print(i)
-
-
-(10).
-age=11
-
-if 10<=age<=18:
-    print("child")
-elif 18<=age<=25:
-    print("adult")
-elif 50<=age<=60:
-    print("senior")
-else:
-    pass
 
