@@ -1,0 +1,45 @@
+# 1.find even numbers
+mylist=[23,45,22,67,44,2]
+for i in mylist:
+    if i%2==0:
+        print(i)
+
+
+
+# 2.checks if each element is an integer, squares it if it is,
+mylist=[23,45,22,67,44,2,"ub","inhi"]
+l=[]
+for i in mylist:
+    if type(i) is int:
+        a=i**2
+        print(a)
+        l.append(a)
+    else:
+        print(i)
+    
+l       
+
+
+
+#3.check number is in list or not
+mylist=[1,2,3,4]
+x=6
+if x in mylist:
+    print("true")
+else:
+    print("false")
+
+
+
+# 4.find dublicate value
+l=[1,2,3,3]
+count=0
+for i in range(0,len(l)):
+    for j in range(1,len(l)):
+        if l[i]==l[j]:
+            count+=1
+if count>0:
+    print("dublicate")
+else:
+    print("not")
+        
