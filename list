@@ -42,4 +42,19 @@ if count>0:
     print("dublicate")
 else:
     print("not")
-        
+
+
+
+5.pascel triangle
+mylist=[]
+for i in range(0,5):
+    temp=[]
+    for j  in range(0,i+1):
+        if j==0 or j==i:
+            temp.append(1)
+        else:
+            temp.append(mylist[i-1][j-1] +  mylist[i-1][j])
+                        
+    mylist.append(temp) 
+print(mylist)    
+  
