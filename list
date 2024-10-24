@@ -57,4 +57,48 @@ for i in range(0,5):
                         
     mylist.append(temp) 
 print(mylist)    
+
+
+#4.harshad
+n=54
+a=n
+total=0
+while n>0:
+    rem=n%10
+    total+=rem
+    n=n//10
+if a%total==0:
+    print("harshad")
+else:
+    print("not")
+
+
+#5.disarium
+n=135
+count=len(str(n))
+total=0
+while n>0:
+    rem=n%10
+    total+=rem**count
+    count-=1
+    n=n//10
+print(total) 
+
+
+
+#6.monotonic
+a = [1,2,3]
+increasing = True
+decreasing = True
+for i in range(len(a)-1):
+    if a[i] < a[i + 1]:
+        decreasing = False
+    elif a[i] > a[i + 1]:
+        increasing = False 
+monotonic = increasing or decreasing
+monotonic
+
+
+
+
   
