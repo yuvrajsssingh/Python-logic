@@ -1,0 +1,44 @@
+# Accesing item
+a={"brand":"kia","model":"celtos","year":2022}
+b=a["model"]
+print(b)
+
+
+  # Accesing item
+a={"brand":"kia","model":"celtos","year":2022}
+b=a["model"]
+print(b)
+
+
+  a={"brand":"kia","model":"celtos","year":2022}
+for i in a:
+    print(a[i])
+
+
+  a={"brand":"kia","model":"celtos","year":2022}
+for i in a.values():
+    print(i)
+
+
+  a={"brand":"kia","model":"celtos","year":2022}
+for x,y in a. items():
+    print(x,y)
+
+
+
+  # adding new element in dictionary
+a={"brand":"kia","model":"celtos","year":2022}
+a['km_driven']=5000
+print(a)
+
+
+
+  # pre - defined function in dictionary
+# len()
+a={"brand":"kia","model":"celtos","year":2022}
+x=len(a)
+print("tota length",x)
+
+
+
+  
