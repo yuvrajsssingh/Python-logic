@@ -32,6 +32,16 @@ a['km_driven']=5000
 print(a)
 
 
+item=[('momos',40),('pizza',100),('chips',10)]
+def total(a):
+     x=0
+     for item in a:
+         x=x+item[1]
+     return x
+print(item)
+total_cost=total(item)
+print("the total cost is:",total_cost)
+
 
   # pre - defined function in dictionary
 # len()
